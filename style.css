@@ -1,0 +1,60 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background-color: #333;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.galeria {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 20px;
+}
+
+.galeria img {
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	transition: transform 0.3s ease-in-out;
+}
+
+.galeria img:hover {
+	transform: scale(1.1);
+}
+
+.upload {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.upload h2 {
+	margin-bottom: 20px;
+}
+
+.upload input[type="file"] {
+	display: block;
+	margin: 0 auto 20px auto;
+}
+
+footer {
+	background-color: #333;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
